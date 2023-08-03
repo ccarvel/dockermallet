@@ -1,0 +1,11 @@
+services:
+  mallet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/data
+    working_dir: /mallet-202108_cds-custom
+    # what command(s) does user need to start work with Mallet
+    # command: bin/mallet import-dir --input /data/topic-input --output topic-input.mallet --keep-sequence --remove-stopwords
+    # command: bin/mallet train-topics  --input topic-input.mallet --num-topics 30 --optimize-interval 20 --output-state topic-state.gz  --output-topic-keys tutorial_keys.txt --output-doc-topics tutorial_composition.txt
