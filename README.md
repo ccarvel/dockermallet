@@ -5,12 +5,10 @@ Docker Desktop (running)<br>
 ```git``` set up for use from your terminal or GitHub Desktop to clone the repository <br>
 # Quickstart<br>
 From terminal/command line:<br>
-```git clone https://github.com/ccarvel/dockermallet.git
-```<br>
+```git clone https://github.com/ccarvel/dockermallet.git```<br>
 
 Change directories to the docker\_mallet directory:<br>
-```cd dockermallet
-```
+```cd dockermallet```
 Ensure the cloning worked by listing what files are in your new docker\_mallet directory:
 ```ls -lah```
 Which should give you this output:
