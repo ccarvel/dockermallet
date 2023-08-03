@@ -9,8 +9,8 @@ From terminal/command line:<br>
 ```<br>
 
 Change directories to the docker\_mallet directory:<br>
-```cd dockermallet```
-
+```cd dockermallet
+```
 Ensure the cloning worked by listing what files are in your new docker\_mallet directory:
 ```ls -lah```
 Which should give you this output:
