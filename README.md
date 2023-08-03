@@ -5,10 +5,10 @@ Docker Desktop (running)<br>
 ```git``` set up for use from your terminal or GitHub Desktop to clone the repository <br>
 # Quickstart<br>
 From terminal/command line:<br>
-```git clone [dkr_mallet repo url]```<br>
+```git clone https://github.com/ccarvel/dockermallet.git```<br>
 
 Change directories to the docker\_mallet directory:<br>
-```cd dkr_mallet```
+```cd dockermallet```
 
 Ensure the cloning worked by listing what files are in your new docker\_mallet directory:
 ```ls -lah```
@@ -22,7 +22,7 @@ drwxr-xr-x    12 userid  staff   384B Jul 21 17:49 .git
 ```
 <br><br>
  This version makes use of a shell script ```run_mallet.sh```<br>
-From the dkr\_mallet directory enter:<br>
+From the dockermallet directory enter:<br>
 ```./run_mallet.sh```<br>
 
 You should see docker build Mallet and bring you into the container that holds the Mallet application and your data directory:
