@@ -5,24 +5,23 @@ FROM ubuntu:latest
 ENV MALLET_HOME /usr/local/mallet
 ENV PATH $MALLET_HOME/bin:$PATH
 
+#ADD LOCAL DIR
+
+
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y openjdk-11-jre wget unzip tar nano gpg curl ca-certificates curl gnupg -y && \
-    sudo install -m 0755 -d /etc/apt/keyrings && \
-    curl -fsSL https://download.docker.com/l inux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
-    sudo chmod a+r /etc/apt/keyrings/docker.gpg && \
-    source ~/.bashrc && \
-#     install -m 0755 -d /etc/apt/keyrings && \
-#     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
-#     sudo chmod a+r /etc/apt/keyrings/docker.gpg && \ 
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y openjdk-11-jre wget unzip tar nano gpg ca-certificates curl gnupg coreutils -y && \
+    mkdir malletmp
 
-# RUN echo \
-#     "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+#ADD REPO
+# RUN echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
 #     "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-#     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+#     tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-# RUN apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+# Install docker cmds
+# RUN apt-get update && \
+#     apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin && \
+#     rm -rf /var/lib/apt/lists/*
 
 # Download Mallet
 WORKDIR /usr/local/
