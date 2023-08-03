@@ -8,6 +8,7 @@ ENV PATH $MALLET_HOME/bin:$PATH
 # Install necessary packages
 RUN apt-get update && \
     apt-get install -y openjdk-11-jre wget unzip tar nano gpg curl -y && \
+    source ~/.bashrc && \
     install -m 0755 -d /etc/apt/keyrings && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg && \
     sudo chmod a+r /etc/apt/keyrings/docker.gpg && \ 
