@@ -7,7 +7,7 @@ ENV PATH $MALLET_HOME/bin:$PATH
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y openjdk-8-jre wget unzip tar nano -y && \
+    apt-get install -y openjdk-11-jre wget unzip tar nano -y && \
     rm -rf /var/lib/apt/lists/*
 
 # Download Mallet
