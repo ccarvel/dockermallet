@@ -5,9 +5,6 @@ FROM ubuntu:latest
 ENV MALLET_HOME /usr/local/mallet
 ENV PATH $MALLET_HOME/bin:$PATH
 
-#ADD LOCAL DIR
-
-
 # Install necessary packages
 RUN apt-get update && \
     apt-get install -y openjdk-11-jre wget unzip tar nano gpg ca-certificates curl gnupg coreutils -y && \
