@@ -31,10 +31,10 @@ RUN wget -O mallet-202108_cds-custom.tar.gz "https://cody.digitalscholarship.bro
 WORKDIR /usr/local/mallet
 
 # create dir for the volume
-RUN mkdir /sample-data
+# RUN mkdir /usr/local/mallet/sample-data
 
 # specify the volume
-VOLUME ["/sample-data"]
+VOLUME ["usr/local/mallet/sample-data"]
 
 # Set the default command to run Mallet
 # CMD ["bin/mallet"]
