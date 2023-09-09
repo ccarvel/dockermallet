@@ -7,8 +7,8 @@ ENV PATH $MALLET_HOME/bin:$PATH
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y openjdk-11-jre wget unzip tar nano gpg ca-certificates curl gnupg coreutils -y && \
-    mkdir malletmp
+    apt-get install -y openjdk-11-jre wget unzip tar nano gpg ca-certificates curl gnupg coreutils -y
+# mkdir malletmp
 
 #ADD REPO
 # RUN echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
