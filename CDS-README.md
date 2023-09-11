@@ -59,8 +59,8 @@ You can build the image by entering:
 ```docker build -t mallet .```  
 and then by using docker run:  
 ```docker run -v /${PWD}/sample-data:/usr/local/mallet/sample-data -it --name malletcds mallet bash```     
-You should see docker build Mallet and bring you into the container that holds the Mallet application and your data directory:
-```root@a96847ae08ff:/usr/local/mallet#```<br>
+You should see docker build Mallet and bring you into the container that holds the Mallet application and your data directory (similar to below):  
+```root@a96847ae08ff:/usr/local/mallet#```   
+You can use the existing ```sample-data``` directory in your ```mallet-202108_cds-custom``` OR ```dockermallet``` directory as the location for the texts you wish to analyze and model for topics--   
+From here you can enter Mallet commands as instructed.  
 
-You can use the existing sample-data directory-- 
-From here you can enter Mallet commands as instructed.
