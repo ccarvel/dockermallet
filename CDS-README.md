@@ -1,8 +1,8 @@
 # dockermallet
 This is the second of two customized Mallet packages for (possible) use in classroom settings. <br>
 # REQUIREMENTS<BR>
-0.) Install Docker Desktop https://www.docker.com/products/docker-desktop/<br>
-```wget``` or ```curl``` or ```git``` set up for use from your terminal or GitHub Desktop to clone the repository <br>
+0.) Install Docker Desktop https://www.docker.com/products/docker-desktop/   
+0a.) ```wget``` or ```curl``` or ```git``` should be available from your Terminal if running macOS or Linux...   
 # QUICKSTART<BR>
 From terminal/command line:<br>
 - a)  ```wget https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.zip```  
