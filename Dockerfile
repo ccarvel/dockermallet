@@ -12,10 +12,10 @@ RUN apt-get update && \
 
 # Download Mallet
 WORKDIR /usr/local/
-RUN wget -O mallet-202108_cds-custom.tar.gz "https://cody.digitalscholarship.brown.edu/mallet-202108_cds-custom.tar.gz" && \
-    tar -zxf mallet-202108_cds-custom.tar.gz && \
+RUN wget -O mallet-202108_cds-custom.zip "https://cody.digitalscholarship.brown.edu/mallet-202108_cds-custom.zip" && \
+    unzip mallet-202108_cds-custom.zip && \
     mv mallet-202108_cds-custom mallet && \
-    rm mallet-202108_cds-custom.tar.gz
+    rm mallet-202108_cds-custom.zip
 
 # Set the working directory
 WORKDIR /usr/local/mallet
