@@ -18,8 +18,7 @@ then,
 Ensure the wget or curl command worked by listing what files are in your new mallet-202108_cds-custom directory:  
 ```ls -lah```  
 
-IF C)
-Change directories to the dockermallet directory:  
+IF C), CHANGE DIRECTORIES TO THE DOCKERMALLET DIRECTORY:  
 ```cd dockermallet```    
 Ensure the cloning worked by listing what files are in your new mallet-202108_cds-custom directory:  
 ```ls -lah```
