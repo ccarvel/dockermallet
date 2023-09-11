@@ -46,7 +46,7 @@ drwxr-xr-x@    4 userid  staff   128B Aug 18  2021 dist
 drwxr-xr-x@    5 userid  staff   160B Aug 18  2021 lib
 -rw-r--r--@    1 userid  staff   8.9K Jun 12  2021 pom.xml
 -rwxr-xr-x@    1 userid  staff   177B Aug  3 15:08 run_mallet.sh
-drwxr-xr-x@    7 userid  staff   224B Aug  3 09:42 sample-data
+drwxr-xr-x@    7 userid  staff   224B Sep 11 09:42 sample-data
 drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 src
 drwxr-xr-x@    9 userid  staff   288B Jun 12  2021 stoplists
 drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 test
