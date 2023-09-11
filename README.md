@@ -1,5 +1,5 @@
 # dockermallet
-This is the second of two customized Mallet packages for (possible) use in classroom settings. <br>
+This is a customized Mallet repo (ie it has a dataset in the sample-data directory, a Dockerfile, and run_mallet.sh helper script to make Mallet easier to begin using for certain CDS workshops... <br>
 # REQUIREMENTS<BR>
 0.) Install Docker Desktop https://www.docker.com/products/docker-desktop/   
 0a.) ```wget``` or ```curl``` or ```git``` should be available from your Terminal if running macOS or Linux...   
