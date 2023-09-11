@@ -1,22 +1,29 @@
 # dockermallet
 This is the second of two customized Mallet packages for (possible) use in classroom settings. <br>
-# Requirements<br>
-Docker Desktop (running)<br>
-```wget``` or ```curl``` set up for use from your terminal or GitHub Desktop to clone the repository <br>
-# Quickstart<br>
+# REQUIREMENTS<BR>
+0.) Install Docker Desktop https://www.docker.com/products/docker-desktop/<br>
+```wget``` or ```curl``` or ```git``` set up for use from your terminal or GitHub Desktop to clone the repository <br>
+# QUICKSTART<BR>
 From terminal/command line:<br>
-- ```wget https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.tar.gz```  
+- a)  ```wget https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.zip```  
 or  
-- ```curl -O https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.tar.gz```
+- b) ```curl -O https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.zip```  
+or  
+- c) ```git clone https://github.com/ccarvel/dockermallet.git```
 
-Untar the file:  
-- ```tar -xvf mallet-20218_cds-custom.tar.gz```
+IF A) OR B), UNZIP THE FILE:  
+- ```unzip mallet-202108_cds-custom.zip```  
+then,   
+- ```cd mallet-20218_cds-custom```  
+Ensure the wget or curl command worked by listing what files are in your new mallet-202108_cds-custom directory:  
+```ls -lah```  
 
-Change directories to the mallet-202108_cds-custom directory:  
-```cd mallet-202108_cds-custom```   
+IF C)
+Change directories to the dockermallet directory:  
+```cd dockermallet```    
 Ensure the cloning worked by listing what files are in your new mallet-202108_cds-custom directory:  
 ```ls -lah```
-Which should give you this output:
+Which should give you something similar to this this output:  
 ```total 176
 drwxr-xr-x@   25 userid  staff   800B Aug 30 13:02 .
 drwx------@ 1976 userid  staff    62K Aug 30 12:48 ..
@@ -43,19 +50,17 @@ drwxr-xr-x@    7 userid  staff   224B Aug  3 09:42 sample-data
 drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 src
 drwxr-xr-x@    9 userid  staff   288B Jun 12  2021 stoplists
 drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 test
-```
-<br><br>
- If Docker is running you can build the image by entering:  
+```   
+   
+If Docker is running, you can proceed by using the helper script:     
+```./run_mallet.sh```
+OR
+You can build the image by entering:  
 ```docker build -t mallet .```  
-and run:  
-```docker run -v /${PWD}/tmp:/usr/local/mallet/malletmp -it --name malletcds mallet bash```  
-<br>
- You can also start the container with the helper script:     
-```run_mallet.sh```<br>
-From the mallet-202108_cds-custom directory enter:<br>
-```./run_mallet.sh```<br>
-
+and then by using docker run:  
+```docker run -v /${PWD}/sample-data:/usr/local/mallet/sample-data -it --name malletcds mallet bash```     
 You should see docker build Mallet and bring you into the container that holds the Mallet application and your data directory:
 ```root@a96847ae08ff:/usr/local/mallet#```<br>
 
+You can use the existing sample-data directory-- 
 From here you can enter Mallet commands as instructed.
