@@ -52,8 +52,8 @@ drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 test
 ```   
    
 If Docker is running, you can proceed by using the helper script:     
-```./run_mallet.sh```
-OR
+```./run_mallet.sh```   
+OR   
 You can build the image by entering:  
 ```docker build -t mallet .```  
 and then by using docker run:  
