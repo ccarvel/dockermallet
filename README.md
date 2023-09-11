@@ -11,14 +11,14 @@ or
 or  
 - c) ```git clone https://github.com/ccarvel/dockermallet.git```
 
-IF A) OR B), UNZIP THE FILE:  
+IF **A)** OR **B)**, UNZIP THE FILE:  
 - ```unzip mallet-202108_cds-custom.zip```  
 then,   
 - ```cd mallet-20218_cds-custom```  
 Ensure the wget or curl command worked by listing what files are in your new mallet-202108_cds-custom directory:  
 ```ls -lah```  
 
-IF C), CHANGE DIRECTORIES TO THE DOCKERMALLET DIRECTORY:  
+IF **C)**, CHANGE DIRECTORIES TO THE ```dockermallet``` DIRECTORY:  
 ```cd dockermallet```    
 Ensure the cloning worked by listing what files are in your new mallet-202108_cds-custom directory:  
 ```ls -lah```
