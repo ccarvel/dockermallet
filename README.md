@@ -59,11 +59,17 @@ drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 test
 > The first to **build** the Mallet image is the same as running:   
 > ```docker build -t mallet .```
 
-> And the second command uses docker to **run** the image as a container:
+> And the second command uses docker to **run** the image as a container:   
 > ```docker run -v /${PWD}/sample-data:/usr/local/mallet/sample-data -it --name malletcds mallet bash```
   
 You should see docker build Mallet and bring you into the container that holds the Mallet application and your data directory (similar to below):  
 ```root@a96847ae08ff:/usr/local/mallet#```   
-You can use the existing ```sample-data``` directory in your ```mallet-202108_cds-custom``` OR ```dockermallet``` directory as the location for the texts you wish to analyze and model for topics--   
-From here you can enter Mallet commands as instructed.  
+
+   
+The ```sample-data``` directory in your ```~/Downloads/mallet-202108_cds-custom``` folder is where you will want to add the texts you wish to analyze and model--   
+This ```sample-data``` directory at ```~/Downloads/mallet-202108_cds-custom/sample-data``` is a linked directory located **within** the container at: ```usr/local/mallet/sample-data```   
+
+   
+From here you can enter Mallet commands as instructed. To run Mallet from the container, which should initially place you at ```/usr/local/mallet/``` you will type ```bin/mallet``` and whatever additional flags and commands you wish to use...    
+eg ```bin/mallet import-dir --input sample-data/foldername/ --output tutorial.mallet --keep-sequence --remove-stopwords```   
 
