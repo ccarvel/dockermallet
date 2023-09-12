@@ -70,6 +70,8 @@ The ```sample-data``` directory in your ```~/Downloads/mallet-202108_cds-custom`
 This ```sample-data``` directory at ```~/Downloads/mallet-202108_cds-custom/sample-data``` is a linked directory located **within** the container at: ```usr/local/mallet/sample-data```   
 
    
-From here you can enter Mallet commands as instructed. To run Mallet from the container, which should initially place you at ```/usr/local/mallet/``` you will type ```bin/mallet``` and whatever additional flags and commands you wish to use...    
-eg ```bin/mallet import-dir --input sample-data/foldername/ --output tutorial.mallet --keep-sequence --remove-stopwords```   
+From here you can enter Mallet commands as instructed.  
+   
+To run Mallet from the container, which should initially place you at ```/usr/local/mallet/``` you will type ```bin/mallet``` and whatever additional flags and commands you wish to use...    
+eg ```bin/mallet import-dir --input sample-data/foldernamewithyourfiles/ --output tutorial.mallet --keep-sequence --remove-stopwords```   
 
