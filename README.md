@@ -4,25 +4,17 @@ This is a customized Mallet repo (ie it has a dataset in the sample-data directo
 0.) Install Docker Desktop https://www.docker.com/products/docker-desktop/
 - start Docker by opening Docker in your Applications folder (the Dockjer icon should appear in your Dock and or menubar)
    
-0a.) ```wget``` or ```curl``` or ```git``` should already be available from your Terminal if running macOS or Linux...   
-# QUICKSTART<BR>
-From terminal/command line:<br>
-- a)  ```wget https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.zip```  
-or  
-- b) ```curl -O https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.zip```  
-or  
-- c) ```git clone https://github.com/ccarvel/dockermallet.git```
-
-IF **A)** OR **B)**, UNZIP THE FILE:  
-- ```unzip mallet-202108_cds-custom.zip```  
-then,   
-- ```cd mallet-20218_cds-custom```  
-Ensure the wget or curl command worked by listing what files are in your new mallet-202108_cds-custom directory:  
-```ls -lah```  
-
-IF **C)**, CHANGE DIRECTORIES TO THE ```dockermallet``` DIRECTORY:  
-```cd dockermallet```    
-Ensure the cloning worked by listing what files are in your new mallet-202108_cds-custom directory:  
+# QUICKSTART   
+1.) Download the zip file located at: https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.zip  
+> Let's assume you are downloading to your Downloads folder
+   
+2.) Once downloaded, open your Downloads folder and double-click mallet-202108_cds-custom.zip   
+> This will create a new folder in your Downloads folder: ```~/Downloads/mallet-202108_cds-custom/```
+> The tilde **~** is a placeholder/shortcut for the path on your computer equal to /Users/youruserid/, thus **~/Downloads** is the same as saying **/Users/youruserid/Downloads**      
+   
+3.) From this point, let's start using the Terminal by using the keyboard shortcut: ```⌘+spacebar``` and typing Terminal and pressing Enter/Return or clicking the Terminal icon      
+> 
+  
 ```ls -lah```
 Which should give you something similar to this this output:  
 ```total 176
