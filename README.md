@@ -13,9 +13,16 @@ This is a customized Mallet repo (ie it has a dataset in the sample-data directo
 > The tilde **~** is a placeholder/shortcut for the path on your computer equal to /Users/youruserid/, thus **~/Downloads** is the same as saying **/Users/youruserid/Downloads**      
    
 3.) From this point, let's start using the Terminal by using the keyboard shortcut: ```⌘+spacebar``` and typing Terminal and pressing Enter/Return or clicking the Terminal icon      
-> 
-  
-```ls -lah```
+    
+4.) To enter the ~/Downloads/mallet-202108_cds-custom folder within Terminal, type:  
+   
+```cd ~/Downloads/mallet-202108_cds-custom```  
+   
+5.) Let's confirm your folder has the necessary files and folders by listing its contents with the command:   
+     
+```ls -lah```   
+
+   
 Which should give you something similar to this this output:  
 ```total 176
 drwxr-xr-x@   25 userid  staff   800B Aug 30 13:02 .
@@ -45,13 +52,16 @@ drwxr-xr-x@    9 userid  staff   288B Jun 12  2021 stoplists
 drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 test
 ```   
    
-If Docker is running, you can proceed by using the helper script:     
+6.) With Docker running, you can proceed to start Mallet using the helper script run_mallet.sh:        
 ```./run_mallet.sh```   
-OR   
-You can build the image by entering:  
-```docker build -t mallet .```  
-and then by using docker run:  
-```docker run -v /${PWD}/sample-data:/usr/local/mallet/sample-data -it --name malletcds mallet bash```     
+
+> This script runs two commands...   
+> The first to **build** the Mallet image is the same as running:   
+> ```docker build -t mallet .```
+
+> And the second command uses docker to **run** the image as a container:
+> ```docker run -v /${PWD}/sample-data:/usr/local/mallet/sample-data -it --name malletcds mallet bash```
+  
 You should see docker build Mallet and bring you into the container that holds the Mallet application and your data directory (similar to below):  
 ```root@a96847ae08ff:/usr/local/mallet#```   
 You can use the existing ```sample-data``` directory in your ```mallet-202108_cds-custom``` OR ```dockermallet``` directory as the location for the texts you wish to analyze and model for topics--   
