@@ -1,8 +1,10 @@
 # dockermallet
 This is a customized Mallet repo (ie it has a dataset in the sample-data directory, a Dockerfile, and run_mallet.sh helper script to make Mallet easier to begin using for certain CDS workshops... <br>
 # REQUIREMENTS<BR>
-0.) Install Docker Desktop https://www.docker.com/products/docker-desktop/   
-0a.) ```wget``` or ```curl``` or ```git``` should be available from your Terminal if running macOS or Linux...   
+0.) Install Docker Desktop https://www.docker.com/products/docker-desktop/
+- start Docker by opening Docker in your Applications folder (the Dockjer icon should appear in your Dock and or menubar)
+   
+0a.) ```wget``` or ```curl``` or ```git``` should already be available from your Terminal if running macOS or Linux...   
 # QUICKSTART<BR>
 From terminal/command line:<br>
 - a)  ```wget https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.zip```  
