@@ -82,8 +82,9 @@ drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 test
    
 6.) With Docker running, you can proceed to start Mallet using the helper script run_mallet.sh:        
 ```./run_mallet.sh```  
-*(If you receive an error trying to use the ```run_mallet.sh``` script, try running the command  
-```chmod +x run_mallet.sh``` first, and then try running it again).     
+*(If you receive an error trying to use the ```run_mallet.sh``` script, try running the command*  
+```chmod +x run_mallet.sh```  
+*and then try running* ```./run_mallet.sh``` *again).*     
 
 > This script runs two commands...   
 > The first to **build** the Mallet image is the same as running:   
