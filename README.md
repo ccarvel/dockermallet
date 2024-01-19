@@ -1,8 +1,36 @@
 # dockermallet
 This is a customized Mallet repo (ie it has a dataset in the sample-data directory, a Dockerfile, and run_mallet.sh helper script to make Mallet easier to begin using for certain CDS workshops... <br>
 # REQUIREMENTS<BR>
-0.) Install Docker Desktop https://www.docker.com/products/docker-desktop/
-- start Docker by opening Docker in your Applications folder (the Dockjer icon should appear in your Dock and or menubar)
+1.) Install Docker Desktop https://www.docker.com/products/docker-desktop/  
+
+**As of January 2024 the System Requirements for Docker Desktop are:**
+**macOS** [INSTALLATION INSTRUCTIONS FOR macOS](https://docs.docker.com/desktop/release-notes/#:~:text=Minimum%20OS%20version%20to%20install,%2Ffor%2Dmac%237000.)    
+Monterey (version 12) or later  
+4GB RAM  
+
+
+**Windows**  [INSTALLATION INSTRUCTIONS FOR WINDOWS](https://docs.docker.com/desktop/install/windows-install/#:~:text=WSL%20version%201.1.3.0%20or,(build%2019045)%20or%20higher.)  
+- WSL version 1.1.3.0 or later.  
+- Windows 11 64-bit: Home or Pro version 21H2 or higher, or Enterprise or Education version 21H2 or higher.  
+- Windows 10 64-bit:  
+    * We recommend Home or Pro 22H2 (build 19045) or higher, or Enterprise or Education 22H2 (build 19045) or higher.  
+
+    * Minimum required is Home or Pro 21H2 (build 19044) or higher, or Enterprise or Education 21H2 (build 19044) or higher.  
+    Turn on the WSL 2 feature on Windows.   
+
+
+**LINUX** [INSTALLATION INSTRUCTIONS FOR LINUX](https://docs.docker.com/desktop/install/linux-install/)
+
+- UBUNTU, DEBIAN, FEDORA 64-bit (x86_64 AMD64 CPU)  
+- 4GB RAM  
+- KVM virtualization support.
+- QEMU must be version 5.2 or later. We recommend upgrading to the latest version
+- systemd init system.
+- Gnome, KDE, or MATE Desktop environment.
+- Enable configuring ID mapping in user namespaces
+- Recommended: Initialize ```pass``` for credentials management.
+
+2.) **Start Docker by opening Docker in your Applications folder (the Docker icon should appear in your Dock and or menubar)**  
    
 # QUICKSTART   
 1.) Download the zip file located at: https://github.com/ccarvel/dockermallet/releases/download/cds-custom/mallet-202108_cds-custom.zip  
@@ -53,7 +81,9 @@ drwxr-xr-x@    3 userid  staff    96B Jun 12  2021 test
 ```   
    
 6.) With Docker running, you can proceed to start Mallet using the helper script run_mallet.sh:        
-```./run_mallet.sh```   
+```./run_mallet.sh```  
+*(If you receive an error trying to use the ```run_mallet.sh``` script, try running the command  
+```chmod +x run_mallet.sh``` first, and then try running it again).     
 
 > This script runs two commands...   
 > The first to **build** the Mallet image is the same as running:   
